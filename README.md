@@ -18,5 +18,40 @@ Each module in this project demonstrates a different provider or Riverpod concep
 ---
 
 ## 🗂️ Folder Structure
-<pre> ``` lib/ ├── family_builder_provider/ │ ├── family_builder_provider.dart │ └── family_builder_screen.dart ├── future_provider/ │ ├── future_provider.dart │ └── fp_screen.dart ├── item_list_app/ │ ├── models/ │ │ ├── favorite_item_model.dart │ │ └── item_model.dart │ ├── providers/ │ │ ├── favorite_provider.dart │ │ └── favorite_state.dart │ └── view/ │ ├── favorite_item_screen.dart │ └── item_list_screen.dart ├── multiple_state_handling/ │ ├── slider_provider.dart │ └── slider_provider_screen.dart ├── simple_provider/ │ └── simple_provider.dart ├── state_notifier_provider/ │ ├── search_provider.dart │ └── search_provider_screen.dart ├── state_provider/ │ ├── counter_example.dart │ ├── switch_example.dart │ └── switch_example_stateful.dart ├── stream_provider/ │ ├── stream_provider.dart │ └── stream_provider_screen.dart ├── main.dart └── option_screen.dart  ``` </pre>
+```
+lib/
+├── family_builder_provider/
+│   ├── family_builder_provider.dart
+│   └── family_builder_screen.dart
+├── future_provider/
+│   ├── future_provider.dart
+│   └── fp_screen.dart
+├── item_list_app/
+│   ├── models/
+│   │   ├── favorite_item_model.dart
+│   │   └── item_model.dart
+│   ├── providers/
+│   │   ├── favorite_provider.dart
+│   │   └── favorite_state.dart
+│   └── view/
+│       ├── favorite_item_screen.dart
+│       └── item_list_screen.dart
+├── multiple_state_handling/
+│   ├── slider_provider.dart
+│   └── slider_provider_screen.dart
+├── simple_provider/
+│   └── simple_provider.dart
+├── state_notifier_provider/
+│   ├── search_provider.dart
+│   └── search_provider_screen.dart
+├── state_provider/
+│   ├── counter_example.dart
+│   ├── switch_example.dart
+│   └── switch_example_stateful.dart
+├── stream_provider/
+│   ├── stream_provider.dart
+│   └── stream_provider_screen.dart
+├── main.dart
+└── option_screen.dart
+```
 
