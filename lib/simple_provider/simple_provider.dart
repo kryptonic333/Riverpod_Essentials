@@ -12,7 +12,6 @@ final age = Provider<int>((ref) {
   return 25;
 });
 
-
 // ConsumerWidget for StatefulWidget
 // ConsumerWidget - consumes values from a Provider.
 // A reference to a Provider is  NOT passed to the ConsumerWidget when its a StatefulWidget.
@@ -30,6 +29,10 @@ class _SimpleProviderState extends ConsumerState<SimpleProvider> {
     // ignore: non_constant_identifier_names
     final Age = ref.watch(age);
     return Scaffold(
+      appBar: AppBar(
+        centerTitle: true,
+        title: Text('Simple Provider'),
+      ),
       body: Center(
         child: Text(
           'Name: $name \n Age: $Age',

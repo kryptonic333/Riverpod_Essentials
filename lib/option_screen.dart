@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:riverpod_tutorial/family_builder_provider/family_builder_screen.dart';
 import 'package:riverpod_tutorial/future_provider/fp_screen.dart';
+import 'package:riverpod_tutorial/get_api_future_provider/post_screen.dart';
 import 'package:riverpod_tutorial/item_list_app/view/favorite_item_screen.dart';
 import 'package:riverpod_tutorial/item_list_app/view/item_list_screen.dart';
 import 'package:riverpod_tutorial/multiple_state_handling/slider_provider_screen.dart';
@@ -153,11 +154,23 @@ class OptionScreen extends StatelessWidget {
               },
             ),
           ),
+          // Get API x Future Provider Example
+          Card(
+            child: ListTile(
+              trailing: const Icon(Icons.arrow_forward_ios),
+              title: const Text('Get API x Future Provider'),
+              onTap: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context) {
+                  return const PostScreen();
+                }));
+              },
+            ),
+          ),
           // Family Builder Provider Example
           Card(
             child: ListTile(
               trailing: const Icon(Icons.arrow_forward_ios),
-              title: const Text('Family Builder Provider Example'),
+              title: const Text('Family Builder Provider'),
               onTap: () {
                 Navigator.push(context, MaterialPageRoute(builder: (context) {
                   return const FamilyBuilderScreen();
