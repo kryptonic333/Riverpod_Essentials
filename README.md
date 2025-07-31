@@ -8,9 +8,40 @@ Each module in this project demonstrates a different provider or Riverpod concep
 
 ## 🚀 Topics Covered
 <details> <summary>✅ <strong>SimpleProvider</strong></summary>
-final nameProvider = Provider((ref) => 'Mazhar');
-ref.watch(nameProvider); // Access value
+  ```
+  final nameProvider = Provider((ref) => 'Mazhar');
+  ref.watch(nameProvider); // Access value
+  ```
 </details>
+<details> <summary>✅ <strong>StateProvider</strong> (Counter & Switch)</summary>
+  ```
+  final counterProvider = StateProvider((ref) => 0); 
+  ref.watch(counterProvider);                  // Read value
+  ref.read(counterProvider.notifier).state++;  // Update value
+  ```
+</details>
+<details> <summary>✅ <strong>StateNotifierProvider</strong> (Search functionality)</summary>
+  ```
+ class SearchNotifier extends StateNotifier<String> {
+  SearchNotifier() : super('');
+  void update(String value) => state = value;
+ } 
+
+ final searchProvider = StateNotifierProvider<SearchNotifier, String>(
+  (ref) => SearchNotifier(),
+ );
+
+ ref.watch(searchProvider);                    // Read state
+ ref.read(searchProvider.notifier).update(''); // Update state
+ ```   </details>
+✅ FutureProvider  
+✅ StreamProvider  
+✅ Provider Family  
+✅ Multiple Providers  
+✅ ConsumerWidget & Consumer  
+✅ Hooks (Optional in advanced examples)
+
+
 
 ---
 
