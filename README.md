@@ -7,13 +7,10 @@ Each module in this project demonstrates a different provider or Riverpod concep
 ---
 
 ## 🚀 Topics Covered
-
-✅ SimpleProvider  
-✅ StateProvider (Counter & Switch examples)  
-✅ StateNotifierProvider (Search functionality)  
-✅ Provider Family (Parameterized provider)  
-✅ FutureProvider (API-driven asynchronous data)  
-✅ StreamProvider (Live data stream simulation)  
+<details> <summary>✅ <strong>SimpleProvider</strong></summary>
+final nameProvider = Provider((ref) => 'Mazhar');
+ref.watch(nameProvider); // Access value
+</details>
 
 ---
 
