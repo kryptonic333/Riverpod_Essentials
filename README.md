@@ -21,7 +21,7 @@ Each module in this project demonstrates a different provider or Riverpod concep
   ```
 </details>
 <details> <summary>✅ <strong>StateNotifierProvider</strong> (Search functionality)</summary>
-  ```
+  ``
  class SearchNotifier extends StateNotifier<String> {
   SearchNotifier() : super('');
   void update(String value) => state = value;
@@ -33,7 +33,11 @@ Each module in this project demonstrates a different provider or Riverpod concep
 
  ref.watch(searchProvider);                    // Read state
  ref.read(searchProvider.notifier).update(''); // Update state
- ```   </details>
+ ``</details>
+
+
+
+
 ✅ FutureProvider  
 ✅ StreamProvider  
 ✅ Provider Family  
